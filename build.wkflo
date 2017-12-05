@@ -7,7 +7,7 @@ def build(path) {
               sh "npm set registry ${NPM_URL}";
               }
             withCredentials([string(credentialsId: "verdaccio-npm-token", variable: "NPM_TOKEN")]) {
-              sh "cp -a /tmp/node_modules ${path}/ && cd ${path} && export NPM_TOKEN=${NPM_TOKEN}  && npm install && npx babel lib --out-dir dist && cp package.json dist/package.json && cd dist && cp /tmp/.npmrc . && npm publish";
+              sh "cd ${path} && export NPM_TOKEN=${NPM_TOKEN}  && npm install && cp /tmp/.npmrc . && npm publish";
               }
         }
     }
@@ -17,7 +17,7 @@ try {
     node("slave"){
         checkout scm
         notifier = load("jenkins/notifier.groovy")
-        path = getClass().protectionDomain.codeSource.location.path
+        path = "./"
         build(path)
         }
 } catch (e) {
