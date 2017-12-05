@@ -17,7 +17,7 @@ try {
     node("slave"){
         checkout scm
         notifier = load("jenkins/notifier.groovy")
-        path = "web/ui-web-app/src/development/${service_name}"
+        path = getClass().protectionDomain.codeSource.location.path
         build(path)
         }
 } catch (e) {
