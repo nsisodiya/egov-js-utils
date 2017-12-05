@@ -1,0 +1,19 @@
+{
+  "name": "egov-js-utils",
+  "version": "1.0.0",
+  "description": "Egov Common Utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsisodiya/egov-js-utils.git"
+  },
+  "author": "Narendra Sisodiya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nsisodiya/egov-js-utils/issues"
+  },
+  "homepage": "https://github.com/nsisodiya/egov-js-utils#readme"
+}
