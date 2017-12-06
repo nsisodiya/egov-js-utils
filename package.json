@@ -4,7 +4,8 @@
   "description": "Egov Common Utils",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "publishPackage": "np --any-branch "
   },
   "files": [
     "src"
