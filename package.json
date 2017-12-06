@@ -1,5 +1,5 @@
 {
-  "name": "egov-js-utils",
+  "name": "@billexo/egov-ui-react-kit",
   "version": "1.1.0",
   "description": "Egov Common Utils",
   "main": "src/index.js",
