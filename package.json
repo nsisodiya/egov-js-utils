@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "publishPackage": "np --any-branch "
+    "publishPackage": "np --any-branch --access=public"
   },
   "files": [
     "src"
