@@ -1,6 +1,6 @@
 {
   "name": "@billexo/egov-js-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Egov Common Utils",
   "main": "src/index.js",
   "scripts": {
